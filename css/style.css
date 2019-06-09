@@ -478,6 +478,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-weight: 700;
   margin-bottom: 5px;
+  padding-bottom: 40px;
 }
 
 .section-header .section-description {
@@ -595,13 +596,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box {
-  padding: 50px 20px;
+  padding: 50px 30px 30px 20px;
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
   position: relative;
   background: #fafafa;
+  min-height: 328px;
 }
 
 #services .icon {
@@ -655,6 +656,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#services ul{
+  text-align: left;
   font-size: 14px;
   line-height: 24px;
 }
