@@ -1,3 +1,92 @@
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 5px solid teal; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  color: white;
+  font-size: 25px;
+  width: fit-content;
+  font-family: 'Pacifico', cursive;
+}
+
+.highlight{
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: #887a7aab;
+  text-align: center;
+  margin: 8px;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+}
+
+.heading1, .heading2, .heading3{
+  padding-inline-start: 20px;
+  border-right: 1px solid #887a7aab;
+  padding-right: 30px;
+}
+
+.heading1{
+  animation: highlight 5s;
+  animation-iteration-count: infinite;
+}
+
+.heading2{
+  animation: highlight 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.heading3{
+  animation: highlight 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* highlight */
+@keyframes highlight {
+  0%{
+    color: white;
+  }
+ /*  90%{
+    color: #fffdfdab;
+  } */
+  100%{
+    color: #887a7aab;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: teal; }
+}
+
+.services-link{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    margin: auto;
+    width: 100%;
+    color: white;
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -165,8 +254,27 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.hero-content-mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-content-mobile{
+    display: block;
+  }
+}
+
+.hero-content-desktop{
+  display: contents;
+}
+
+@media (max-width: 768px) {
+  .hero-content-desktop{
+    display: none;
+  }
+}
+
 #hero h1 {
-  margin: 30px 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -183,8 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 @media (max-width: 768px) {
