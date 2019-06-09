@@ -159,6 +159,63 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Header-tax
+--------------------------------------------------------------*/
+
+#header-tax {
+  padding: 30px 0;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header-tax #logo {
+  float: left;
+}
+
+#header-tax #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header-tax #logo h1 a, #header-tax #logo h1 a:hover {
+  color: #fff;
+}
+
+#header-tax #logo img {
+  padding: 0;
+  margin: 0;
+  width: 104px;
+  margin-top: -16px;
+}
+
+@media (max-width: 768px) {
+  #header-tax #logo h1 {
+    font-size: 26px;
+  }
+  #header-tax #logo img {
+    max-width: 74px;
+  }
+}
+
+#header-tax.header-fixed {
+  background: rgba(52, 59, 64);
+  padding: 20px 0;
+  height: 72px;
+  transition: all 0.5s;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
