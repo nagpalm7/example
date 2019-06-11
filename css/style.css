@@ -261,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #header #logo img {
     max-width: 74px;
+    margin-top: -8px;
   }
 }
 
@@ -313,6 +314,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content-mobile{
   display: none;
+}
+
+.hero-content-mobile img {
+    width: 132px;
+    margin-block-end: 9px;
 }
 
 @media (max-width: 768px) {
